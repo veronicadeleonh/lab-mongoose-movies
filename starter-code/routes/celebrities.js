@@ -3,10 +3,11 @@ const router = express.Router();
 const Celebrity = require("../models/Celebrity");
 const app = require("../app");
 const { route } = require(".");
+const Movie = require("../models/Movie");
 
 // GET
 
-// LIST THEM ALL
+// LIST ALL CELEBRITIES
 
 router.get("/celebrities", (req, res, next) => {
   Celebrity.find()
